@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overlay", "Overlay\Overlay.csproj", "{47C064E2-9D9E-49B7-8DA9-2A4A44361723}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overlay.Engine", "Overlay.Engine\Overlay.Engine.csproj", "{CE4A7F30-988D-4EF1-B6DB-729A6A061391}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{54C100C2-90F8-4211-9DF7-5704A818C12E}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\EasyHook\EasyHook.dll = Dependencies\EasyHook\EasyHook.dll
+		Dependencies\EasyHook\EasyHook32.dll = Dependencies\EasyHook\EasyHook32.dll
+		Dependencies\EasyHook\EasyHook64.dll = Dependencies\EasyHook\EasyHook64.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47C064E2-9D9E-49B7-8DA9-2A4A44361723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47C064E2-9D9E-49B7-8DA9-2A4A44361723}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47C064E2-9D9E-49B7-8DA9-2A4A44361723}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47C064E2-9D9E-49B7-8DA9-2A4A44361723}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE4A7F30-988D-4EF1-B6DB-729A6A061391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE4A7F30-988D-4EF1-B6DB-729A6A061391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE4A7F30-988D-4EF1-B6DB-729A6A061391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE4A7F30-988D-4EF1-B6DB-729A6A061391}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
