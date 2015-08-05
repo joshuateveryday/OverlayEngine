@@ -68,9 +68,11 @@
   <ItemGroup>
     <Compile Include="ContentManager.cs" />
     <Compile Include="Debug\Log.cs" />
+    <Compile Include="DirectX\Direct3D11.cs" />
     <Compile Include="DirectX\DXGI\VTable.cs" />
     <Compile Include="EntryPoint.cs" />
-    <Compile Include="Events\RegisterOverlayComponent.cs" />
+    <Compile Include="Events\PushComponentDataEventArgs.cs" />
+    <Compile Include="Events\RegisterOverlayComponentEventArgs.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Graphics\Color.cs" />
     <Compile Include="Graphics\GraphicsAdapter.cs" />
@@ -81,6 +83,7 @@
     <Compile Include="DirectX\BaseDeviceInterface.cs" />
     <Compile Include="DirectX\IDeviceInterface.cs" />
     <Compile Include="DirectX\DXGI\SwapChainInterface.cs" />
+    <Compile Include="OverlayInterfaceProxy.cs" />
     <Compile Include="OverlayInterface.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
