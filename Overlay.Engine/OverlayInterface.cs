@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Overlay.Engine {
-    class OverlayInterface {
+    public class OverlayInterface : MarshalByRefObject {
+        public bool IsConnected() {
+            return true;
+        }
     }
 }
