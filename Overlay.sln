@@ -10,8 +10,20 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{54C100C2-90F8-4211-9DF7-5704A818C12E}"
 	ProjectSection(SolutionItems) = preProject
 		Dependencies\EasyHook\EasyHook.dll = Dependencies\EasyHook\EasyHook.dll
+		Dependencies\EasyHook\easyhook.h = Dependencies\EasyHook\easyhook.h
 		Dependencies\EasyHook\EasyHook32.dll = Dependencies\EasyHook\EasyHook32.dll
+		Dependencies\EasyHook\EasyHook32.lib = Dependencies\EasyHook\EasyHook32.lib
+		Dependencies\EasyHook\EasyHook32Svc.exe = Dependencies\EasyHook\EasyHook32Svc.exe
 		Dependencies\EasyHook\EasyHook64.dll = Dependencies\EasyHook\EasyHook64.dll
+		Dependencies\EasyHook\EasyHook64.lib = Dependencies\EasyHook\EasyHook64.lib
+		Dependencies\EasyHook\EasyHook64Svc.exe = Dependencies\EasyHook\EasyHook64Svc.exe
+		Dependencies\EasyHook\EasyHook_LICENSE.txt = Dependencies\EasyHook\EasyHook_LICENSE.txt
+		Dependencies\EasyHook\EasyHook_README.txt = Dependencies\EasyHook\EasyHook_README.txt
+		Dependencies\EasyHook\EasyHookTestCert.cer = Dependencies\EasyHook\EasyHookTestCert.cer
+		Dependencies\EasyHook\EasyLoad32.dll = Dependencies\EasyHook\EasyLoad32.dll
+		Dependencies\EasyHook\EasyLoad32.lib = Dependencies\EasyHook\EasyLoad32.lib
+		Dependencies\EasyHook\EasyLoad64.dll = Dependencies\EasyHook\EasyLoad64.dll
+		Dependencies\EasyHook\EasyLoad64.lib = Dependencies\EasyHook\EasyLoad64.lib
 	EndProjectSection
 EndProject
 Global

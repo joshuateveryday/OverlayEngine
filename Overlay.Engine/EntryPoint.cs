@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EasyHook;
 
 namespace Overlay.Engine {
-    class EntryPoint {
+    public class EntryPoint : IEntryPoint {
+        public EntryPoint(RemoteHooking.IContext inContext, string inChannelName) {
+        }
+
+        public void Run(RemoteHooking.IContext inContext, string inChannelName) {
+        }
     }
 }
