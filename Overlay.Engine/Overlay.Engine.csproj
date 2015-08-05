@@ -70,6 +70,7 @@
     <Compile Include="Debug\Log.cs" />
     <Compile Include="DirectX\DXGI\VTable.cs" />
     <Compile Include="EntryPoint.cs" />
+    <Compile Include="Events\RegisterOverlayComponent.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Graphics\Color.cs" />
     <Compile Include="Graphics\GraphicsAdapter.cs" />
