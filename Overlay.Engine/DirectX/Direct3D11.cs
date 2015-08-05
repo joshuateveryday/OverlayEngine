@@ -7,7 +7,7 @@ namespace Overlay.Engine.DirectX {
     public class Direct3D11 : BaseDeviceInterface {
         private OverlayInterfaceProxy InterfaceProxy = new OverlayInterfaceProxy();
 
-        public Direct3D11(OverlayInterface overlayInterface) : base(overlayInterface) {
+        public Direct3D11(OverlayInterface overlayInterface) : base() {
             Interface = overlayInterface;
 
             Interface.RegisterOverlayComponentHandler += InterfaceProxy.RegisterOverlayComponentProxyHandler;
@@ -31,23 +31,6 @@ namespace Overlay.Engine.DirectX {
             throw new NotImplementedException();
         }
 
-        public override void Unload() {
-            try {
-                LocalHook hook;
-                for (int i = 0; i < InstalledHooks.Count; i++) {
-                    hook = InstalledHooks[i];
-                    InstalledHooks.RemoveAt(i);
-
-                    hook.Dispose();
-                    hook = null;
-                }
-            }
-            catch (Exception ex) {
-                Log.Write("Failed to unload hooks: {0}", ex.Message);
-                System.Diagnostics.Debug.Assert(false, "Failed to unload all hooks because of an exception.", ex.Message);
-            }
-        }
-
         public override void Dispose() {
             try {
                 Interface.RegisterOverlayComponentHandler -= InterfaceProxy.RegisterOverlayComponentProxyHandler;
@@ -57,7 +40,7 @@ namespace Overlay.Engine.DirectX {
                 Log.Write("Failed to decouple listeners: {0}", ex.Message);
             }
             finally {
-                Unload();
+                base.Dispose();
             }
         }
     }
